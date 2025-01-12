@@ -9,7 +9,7 @@ def popular_movies():
     data = response.json()
     return data
 
-def top_rated_movies():  # Similarly, ensure correct name here
+def top_rated_movies():  
     url = f"{'https://api.themoviedb.org/3/'}movie/top_rated?api_key={'fbd7e214356d5ab236b766c6ba47'}&language=en-US"
     response = requests.get(url)
     data = response.json()
